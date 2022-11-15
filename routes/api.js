@@ -15,7 +15,7 @@ router.post("/new", bodyParser.json(), (req, res) => {
 
     posts.newPost({ title, description });
 
-    res.send("Post adicioado");
+    res.send("Post adicionado");
 
 });
 
