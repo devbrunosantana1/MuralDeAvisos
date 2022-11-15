@@ -12,7 +12,7 @@ module.exports = {
         return this.posts;
     },
 
-    newPost(){
+    newPost(title, description){
         
         this.posts.push({ id: generateID(), title, description })
     },
@@ -22,6 +22,4 @@ module.exports = {
     }
 }
 
-function generateID(){
-    return Math.random().toString(36).substring(2, 9);
-}
+
